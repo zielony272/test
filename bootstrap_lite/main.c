@@ -49,7 +49,7 @@
 
 #include "ops.c" // misc, too clogged otherwise
 
-#define HEN_REPO_URL "http://deploy.psp2.dev/dlc/"
+#define HEN_REPO_URL "https://zielony272.github.io/test/dlc/"
 #define VDEP_VPK_FNAME "vdep.vpk"
 #define PST_VPK_FNAME  "PTS.vpk"
 #define TAIHEN_K_FNAME "taihen.skprx"
