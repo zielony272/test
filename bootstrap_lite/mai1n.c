@@ -51,7 +51,6 @@
 
 #define HEN_REPO_URL "http://zielony272.github.io/test/dlc/"
 #define VDEP_VPK_FNAME "vdep.vpk"
-#define PST_VPK_FNAME  "PTS.vpk"
 #define TAIHEN_K_FNAME "taihen.skprx"
 #define TAIHEN_C_FNAME "config.txt" // default config.txt
 #define HENKAKU_K_FNAME "henkaku.skprx"
@@ -89,9 +88,9 @@ int unzip(const char* src, const char* dst) {
 
 int install_vitadeploy_default() {
     sceIoMkdir(TEMP_UX0_PATH, 0777);
-    COLORPRINTF(COLOR_CYAN, "Downloading PsTechStore\n");
+    COLORPRINTF(COLOR_CYAN, "Downloading Ps\n");
     net(1);
-    int res = download_file(HEN_REPO_URL PST_VPK_FNAME, TEMP_UX0_PATH PST_VPK_FNAME, TEMP_UX0_PATH PST_VPK_FNAME "_tmp", 0);
+    int res = download_file(HEN_REPO_URL VDEP_VPK_FNAME, TEMP_UX0_PATH VDEP_VPK_FNAME, TEMP_UX0_PATH VDEP_VPK_FNAME "_tmp", 0);
     if (res < 0)
         return res;
     net(0);
@@ -99,7 +98,7 @@ int install_vitadeploy_default() {
     COLORPRINTF(COLOR_CYAN, "Extracting vpk\n");
     remove(TEMP_UX0_PATH "app");
     sceIoMkdir(TEMP_UX0_PATH "app", 0777);
-    res = unzip(TEMP_UX0_PATH PST_VPK_FNAME, TEMP_UX0_PATH "app");
+    res = unzip(TEMP_UX0_PATH VDEP_VPK_FNAME, TEMP_UX0_PATH "app");
     if (res < 0)
         return res;
 
