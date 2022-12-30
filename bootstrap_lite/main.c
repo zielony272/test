@@ -69,7 +69,7 @@ enum E_MENU_OPTIONS {
     MENU_REPLACE_NEAR,
     MENU_RESET_TAICFG
 };
-const char* menu_items[OPTION_COUNT] = { " -> Exit", " -> Install henkaku", " -> Install PsTechStore", " -> Replace NEAR with VitaDeploy", " -> Reset taihen config.txt" };
+const char* menu_items[OPTION_COUNT] = { " -> Exit", " -> Install henkaku", " -> Install PTS", " -> Replace NEAR with VitaDeploy", " -> Reset taihen config.txt" };
 
 int __attribute__((naked, noinline)) call_syscall(int a1, int a2, int a3, int num) {
     __asm__(
