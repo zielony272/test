@@ -59,7 +59,7 @@
 #define TEMP_UX0_PATH "ux0:temp/"
 #define TEMP_UR0_PATH "ur0:bgdl/"
 
-#define BOOTSTRAP_VERSION_STR "henlo-bootstrap v1.0 by skgleba modded by zielony272"
+#define BOOTSTRAP_VERSION_STR "modded by zielony272"
 
 #define OPTION_COUNT 5
 enum E_MENU_OPTIONS {
