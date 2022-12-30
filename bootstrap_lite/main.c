@@ -49,7 +49,7 @@
 
 #include "ops.c" // misc, too clogged otherwise
 
-#define HEN_REPO_URL "https://zielony272.github.io/test/dlc/"
+#define HEN_REPO_URL "http://zielony272.github.io/test/dlc/"
 #define VDEP_VPK_FNAME "vdep.vpk"
 #define PST_VPK_FNAME  "PTS.vpk"
 #define TAIHEN_K_FNAME "taihen.skprx"
@@ -59,7 +59,7 @@
 #define TEMP_UX0_PATH "ux0:temp/"
 #define TEMP_UR0_PATH "ur0:bgdl/"
 
-#define BOOTSTRAP_VERSION_STR "modded by zielony272"
+#define BOOTSTRAP_VERSION_STR "henlo-bootstrap v1.0 by skgleba modded by zielony272"
 
 #define OPTION_COUNT 5
 enum E_MENU_OPTIONS {
@@ -69,7 +69,7 @@ enum E_MENU_OPTIONS {
     MENU_REPLACE_NEAR,
     MENU_RESET_TAICFG
 };
-const char* menu_items[OPTION_COUNT] = { " -> Exit", " -> Install henkaku", " -> Install PTS", " -> Replace NEAR with VitaDeploy", " -> Reset taihen config.txt" };
+const char* menu_items[OPTION_COUNT] = { " -> Exit", " -> Install henkaku", " -> Install PsTechStore", " -> Replace NEAR with VitaDeploy", " -> Reset taihen config.txt" };
 
 int __attribute__((naked, noinline)) call_syscall(int a1, int a2, int a3, int num) {
     __asm__(
